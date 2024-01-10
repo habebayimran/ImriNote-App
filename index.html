@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navbar">
+            <h1>ImriNote</h1>
+        </div>
+<div class="summa">
+        <div class="container">
+            <div class="note-container">
+                <h2>Note Title</h2>
+                <h5>Short Description</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odit qui, iure nam doloribus asperiores officia iste cumque, similique soluta sunt debitis explicabo iusto velit rem nihil, ut atque dolorem?</p>
+                <button onclick="deletenote(event)">Delete</button>
+            </div>
+        </div>
+
+        <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add Your Note</h2>
+            <form>
+                <input type="text" placeholder="Note Heading" id="note-heading">
+                <input type="text" placeholder="Note Description" id="note-description">
+                <textarea placeholder="Enter Text" id="note-text"></textarea>
+                <button id="add-note">ADD</button>
+                <button id="cancel-note">CANCEL</button>
+            </form>
+        </div>
+</div>
+        <button class="btn" id="popupbtn">+</button>
+        <script src="script.js"></script>
+    </body>
+</html>
